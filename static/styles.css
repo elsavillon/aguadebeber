@@ -12,7 +12,9 @@ body {
     background-color: #bce3eb;
     font-family: 'Silkscreen', sans-serif;
     color: #4C2F1C;
+    flex-direction: column;
 }
+
 
 .container {
     text-align: center;
@@ -66,6 +68,7 @@ nav.buttons button:hover img {
     margin: 0 auto 20px;
 }
 
+
 #descricao {
     font-size: 1em;
     color: #333;
@@ -98,8 +101,8 @@ nav.buttons button:hover img {
         font-size: 0.9em;
     }
 }
-
 footer {
+    width: 100%;
     text-align: center; 
     padding: 20px;
     background-color: #bce3eb;
@@ -113,6 +116,6 @@ footer .button {
     background-color: #FBD570;
     padding: 10px 20px;
     border-radius: 5px;
-    display: block;
-    margin: 10px auto 0 auto; 
+    display: inline-block; 
+    margin: 10px auto 0 auto;
 }
