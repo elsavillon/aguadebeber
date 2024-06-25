@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Água de beber</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <script src="trocaimagem.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Você está bebendo água?</h1>
+        <p>Escolha o seu utensílio, role a página e descubra se a hidratação está em dia:</p>
+        <nav class="buttons">
+            <button onclick='trocaimagem("copoamericano", "11 copos americanos Nadir Figueiredo por dia")'>
+                <img src="recipiente/copoamericano.png" alt="Copo americano em pixel art">
+            </button>
+            <button onclick='trocaimagem("abacaxi", "1 jarro e meio de abacaxi da Grande Família por dia")'>
+                <img src="recipiente/abacaxi.png" alt="Jarro em formato de abacaxi em pixel art">
+            </button>
+            <button onclick='trocaimagem("copopiupiu", "8 copos de requeijão do Piu-Piu por dia")'>
+                <img src="recipiente/copopiupiu.png" alt="Copo de requeijão com Piu-Piu em pixel art">
+            </button>
+            <button onclick='trocaimagem("garrafaminalba", "4 garrafinhas moles da Minalba por dia")'>
+                <img src="recipiente/garrafaminalba.png" alt="Garrafa de água plástica em pixel art">
+            </button>
+            <button onclick='trocaimagem("stanley", "2 copos Stanley da Shopee por dia")'>
+                <img src="recipiente/stanley.png" alt="Copo tipo Stanley em pixel art">
+            </button>
+        </nav>
+        <div class="imagem-container">
+            <img id="imagem-alterada" src="" alt="Imagem alterada" style="display: none;">
+        </div>
+        <p id="descricao"></p>
+    </div>
+    <footer>
+        <br>
+        <a href="/sobre" class="button">Sobre</a>
+    </footer>
+</body>
+</html>

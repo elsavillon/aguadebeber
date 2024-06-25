@@ -1,6 +1,11 @@
-alert ("oi")
+function trocaimagem(imagem, descricao) {
+        var descricaoElement = document.getElementById('descricao');
+        var imagemAlterada = document.getElementById('imagem-alterada');
 
-function trocaimagem(imagemNome) {
-    const imagem = document.getElementById('imagem');
-    imagem.src = `unidades/${imagemNome}.png`;
+
+    imagemAlterada.src = "unidades/" + imagem + ".png";
+
+    descricaoElement.textContent = descricao;
+
+    imagemAlterada.style.display = 'block';
 }
