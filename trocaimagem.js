@@ -1,11 +1,8 @@
 function trocaimagem(imagem, descricao) {
-        var descricaoElement = document.getElementById('descricao');
-        var imagemAlterada = document.getElementById('imagem-alterada');
+    var imagemAlterada = document.getElementById('imagem-alterada');
+    imagemAlterada.src = imagem + ".png";
+    imagemAlterada.style.display = 'block'; // Exibe a imagem alterada
 
-
-    imagemAlterada.src = "unidades/" + imagem + ".png";
-
+    var descricaoElement = document.getElementById('descricao');
     descricaoElement.textContent = descricao;
-
-    imagemAlterada.style.display = 'block';
 }
