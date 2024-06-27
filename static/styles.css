@@ -15,15 +15,14 @@ body {
     flex-direction: column;
 }
 
-
 .container {
     text-align: center;
     background-color: #bce3eb;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 600px;
     width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -32,14 +31,13 @@ h1 {
 }
 
 p {
-    font-size: 1.5em;
+    font-size: 2em;
     margin-bottom: 20px;
 }
 
 nav.buttons {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column; 
     gap: 10px;
     margin-bottom: 20px;
 }
@@ -48,6 +46,7 @@ nav.buttons button {
     background: none;
     border: none;
     cursor: pointer;
+    width: 100%; 
 }
 
 nav.buttons button img {
@@ -61,16 +60,15 @@ nav.buttons button:hover img {
     transform: scale(1.1); 
 }
 
-.imagem-container {
-    position: relative;
-    width: 100%;
-    max-width: 350px;
-    margin: 0 auto 20px;
+.imagem-alterada {
+    display: block;
+    margin-top: 10px; 
 }
 
-
-#descricao {
-    font-size: 1em;
+.descricao-alterada {
+    display: block;
+    margin-top: 10px; 
+    font-size: 2em;
     color: #333;
 }
 
@@ -90,17 +88,18 @@ nav.buttons button:hover img {
     }
 
     nav.buttons button img {
-        max-width: 100px;
+        max-width: 100px; 
     }
 
-    .imagem-container img {
+    .imagem-alterada {
         max-width: 150px;
     }
 
-    #descricao {
+    .descricao-alterada {
         font-size: 0.9em;
     }
 }
+
 footer {
     width: 100%;
     text-align: center; 
@@ -114,8 +113,18 @@ footer .button {
     text-decoration: none;
     color: #4C2F1C;
     background-color: #FBD570;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 14.4px 28.8px; 
+    border-radius: 7.2px; 
     display: inline-block; 
     margin: 10px auto 0 auto;
+    font-size: 1.44em;
+}
+
+
+h2 {
+    text-align: center;
+}
+img {
+    display: block;
+    margin: 0 auto;
 }
